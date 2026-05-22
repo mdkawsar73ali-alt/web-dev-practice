@@ -1,0 +1,138 @@
+/* 1. Main Layout & Section */
+.pageContainer {
+  display: flex;
+  gap: 32px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leftColumn {
+  flex: 1;
+}
+
+.rightColumn {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.section h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* 2. Search Input */
+.searchInput {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* 3. List Item Styling */
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+  gap: 12px;
+}
+.listItem:last-child {
+  border-bottom: none;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover; /* Prevents image stretching */
+  border: 2px solid #f0f0f0;
+}
+
+.avatarSmall {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* 4. Buttons */
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnPrimary {
+  background-color: #3b82f6;
+  color: white;
+}
+.btnPrimary:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.btnSecondary {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+.btnSecondary:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
+
+.btnAccept {
+  background-color: #10b981;
+  color: white;
+}
+.btnAccept:hover:not(:disabled) {
+  background-color: #059669;
+}
+
+/* 5. Helper Text (Loading / Empty) */
+.helperText {
+  opacity: 0.7;
+  color: #555;
+  text-align: center;
+  padding: 20px 0;
+}
