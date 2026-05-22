@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Lookin Message - Final (simple)
 
 - This package contains a minimal React + Vite project wired to your Firebase config.
@@ -11,3 +12,6 @@ Lookin Message - Final (simple)
   2. npm run dev
 - After logging in with multiple accounts, try sending friend requests between them. If things don't show, open Firebase Realtime Database in console and inspect paths.
 - IMPORTANT: Add proper Firebase Realtime Database rules before production.
+=======
+# web-dev-practice
+>>>>>>> 4867620040ebf110f1e895ef25b3aab55e77f4f9
